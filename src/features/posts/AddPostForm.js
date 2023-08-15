@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useAddNewPostMutation } from "./postsSlice";
 
 const AddPostForm = () => {
-    const [addNewPost, { isLoading }] = useAddNewPostMutation()
+    const [addNewPost] = useAddNewPostMutation()
 
     const navigate = useNavigate()
 
